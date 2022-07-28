@@ -4,12 +4,15 @@ metadata:
   name: bp3
   project: giri
 spec:
+  base:
+    name: default
+    version: 1.16.0
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
-    enableIngress: false
+    enableIngress: true
     enableLogging: false
-    enableMonitoring: false
+    enableMonitoring: true
     enableVM: false
   drift:
     enabled: false
@@ -17,3 +20,4 @@ spec:
   placement: {}
   sharing:
     enabled: false
+  version: vvvv
