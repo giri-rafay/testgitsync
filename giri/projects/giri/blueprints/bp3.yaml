@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: bp3
+  project: giri
+spec:
+  defaultAddons:
+    csiSecretStoreConfig:
+      providers: {}
+    enableIngress: false
+    enableLogging: false
+    enableMonitoring: false
+    enableVM: false
+  drift:
+    enabled: false
+  opaPolicy: {}
+  placement: {}
+  sharing:
+    enabled: false
